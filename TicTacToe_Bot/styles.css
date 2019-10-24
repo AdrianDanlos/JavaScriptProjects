@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    height: 100%;
+}
+#container {
+    position: absolute;
+    /* half of #content height*/
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -100px;
+    width: 100%;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+.cell {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    height: 33.33%;
+    width: 33.33%;
+}
+#title {
+    padding-top: 50px;
+}
+#title p {
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+}
+/*CELL BORDERS*/
+
+#top-left, #top-middle, #top-right, #middle-left, #middle-middle, #middle-right {
+    border-bottom: 1px solid grey;
+}
+#top-left, #middle-left, #bottom-left, #top-middle, #middle-middle, #bottom-middle {
+    border-right: 1px solid grey;
+}
+#gameOver {
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    padding-top: 50px;
+}
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 40px;
+}
+#top-left, #middle-middle {
+    background-image: url("img/cross.png")
+}
